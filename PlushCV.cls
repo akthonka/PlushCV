@@ -9,13 +9,16 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[lmargin=0.9cm, vmargin=0.85cm, rmargin=0.9cm]{geometry}
+\usepackage[a4paper, margin=1.2cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{pifont}
 \usepackage[document]{ragged2e}
 
+% Custom spacing
+\newcommand{\tb}{\textbullet{} }
+\newcommand{\subskip}{\vspace{5pt}}
 
 % Publications
 \usepackage{cite}
@@ -24,7 +27,7 @@
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{date}{HTML}{666666}
-\definecolor{title}{HTML}{1D76E2}
+\definecolor{title}{HTML}{335f9c}
 \definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
@@ -188,7 +191,7 @@ Last Updated on \today
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{5pt}{5pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{5pt}}
+\newcommand{\sectionsep}{\vspace{13pt}}
 
 % Headings command
 \titleformat{\section}{\color{title}
@@ -211,13 +214,13 @@ Last Updated on \today
 \color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{12pt}\selectfont {#1\\} \normalfont}
 
 %Contact Line
-\newcommand{\contactline}[5]{\begingroup
+\newcommand{\contactline}[4]{\begingroup
 \setbox0=\hbox{
-\includegraphics[scale=0.23,trim={1.4cm 1.25cm -0.4cm 0cm}]{icons/main/home.png}{#1}\hspace{0.3cm}
+\includegraphics[scale=0.23,trim={1.4cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#1}\hspace{0.3cm}
 \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#4}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#5}
+\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#3}\hspace{0.3cm}
+\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#4}\hspace{0.3cm}
+%\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/home.png}{#5}
 }\parbox{\wd0}{\box0}\endgroup}
 
 %Inline Centered Logo
