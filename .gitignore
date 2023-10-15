@@ -2,6 +2,7 @@
 *.log
 *.out
 *.md
+*.synctex.gz
 
 # does not ignore README.md file
 !README.md
