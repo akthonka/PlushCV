@@ -10,7 +10,7 @@
 
 % Package Imports
 \usepackage[a4paper, margin=1.2cm]{geometry}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{pifont}
